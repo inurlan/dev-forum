@@ -1,0 +1,10 @@
+<div *ngIf="title && tabs" class="container">
+  <h1 class="title">{{ title }}</h1>
+  <div class="tabs">
+    <h1 role="button" class="tab" *ngFor="let tab of tabs"
+        (click)="selectTab(tab, $event); route.click()"
+        [class.selected]="tab.title == currentTab">
+      <li><a #route [routerLink]="[tab.route]">{{ tab.title }}</a>
+    </h1>
+  </div>
+</div>

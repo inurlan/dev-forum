@@ -1,0 +1,36 @@
+//.container {
+//  margin: 0;
+//  padding: 0;
+//  width: 100%;
+//}
+
+.card {
+  //box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-width: 1px;
+  //transition: 0.3s;
+  width: 50%;
+
+}
+
+.image{
+  height: 270px;
+  overflow: hidden;
+}
+
+.card:hover {
+  //box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 0;
+}
+
+.header{
+  padding: 16px 16px;
+}
+
+.footer{
+  padding: 20px 16px;
+}

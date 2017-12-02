@@ -1,0 +1,201 @@
+
+/// global styling ----------------------------------------------------------------------------------------------
+
+::ng-deep body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Avoid the IE 10-11 `min-height` bug. */
+}
+
+::ng-deep .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+  position: relative;
+  min-height: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.global_style_1 {
+  border: none;
+  color: #70AF1A !important;
+  background: transparent;
+  font-size: 15px;
+}
+
+/// ------------------------------------------------------------------------------------------------------------
+
+.nav-bar {
+  z-index: 100;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: #424242;
+  padding-left: 150px;
+  //border-top: 3px solid #32CD32;
+
+  border-top: 3px solid #CBE32D;
+  border-top-color: #A8CD1B;
+  border-top-width: 3px;
+  border-top-style: solid;
+  box-shadow: 0 1px 0 rgba(12, 13, 14, 0.15), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+  transition: box-shadow cubic-bezier(.165, .84, .44, 1) .25s;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.row {
+  margin: 0;
+}
+
+
+.nav-tabs {
+  border-bottom: 3px solid #424242;
+  li {
+    a {
+
+      border: none;
+      color: #A8CD1B;
+      line-height: 36px;
+
+      &::after {
+        content: "";
+        background: #70AF1A;
+        height: 3px;
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        bottom: -1px;
+        transition: all 250ms ease 0s;
+        transform: scale(0);
+      }
+
+      &:hover {
+        @extend .global_style_1;
+      }
+    }
+
+    &.active {
+      a {
+        @extend .global_style_1;
+        &::after {
+          transform: scale(1);
+        }
+      }
+    }
+
+    &:hover {
+      a::after {
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+.tab-nav {
+  li {
+    a {
+      &::after {
+        background: #70AF1A none repeat scroll 0% 0%;
+        color: #fff;
+      }
+    }
+  }
+}
+
+//.tab-pane {
+//  padding: 0px 0;
+//}
+
+//.tab-content {
+//  padding: 0px 0px
+//}
+
+////end ---------- of bootstrap
+
+// wall
+
+
+.wall{
+  height: 440px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  .image{
+    //filter: brightness(75%);
+    //opacity: 0.3;
+  }
+
+  .center-nav-tab{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+  //.text{
+  //  //left: 0;
+  //  top: 50%;
+  //  position: absolute;
+  //  text-align: center;
+  //  //vertical-align: middle;
+  //  width: 100%;
+  //  color: red;
+  //  transform: translateY(100%);
+  //  background-color: yellow;
+  //}
+}
+
+//
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+
+html {
+  height: 100%;
+}
+
+.content {
+  flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  padding: 20px;
+}
+
+.footer {
+  flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  padding: 20px;
+  background: blue;
+
+}
+
+// inline editor
+::ng-deep .ql-snow .ql-editor {
+  a {
+    font-weight: bold;
+    text-decoration: blink;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  pre.ql-syntax {
+    background-color: #eff0f1;
+    color: black;
+    overflow: visible;
+  }
+}
+
+::ng-deep .ql-toolbar.ql-snow {
+  border-top: thick solid darkgreen;
+}
+
+

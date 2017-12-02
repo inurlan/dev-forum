@@ -1,0 +1,55 @@
+.title {
+  cursor: text;
+  text-align: center;
+  color: white;
+  line-height: 1.01;
+  letter-spacing: 0px;
+  font-size: 38px;
+  //font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+  margin-bottom: 22px;
+}
+
+.tabs {
+  //border-top-color: #A8CD1B;
+}
+
+.tab {
+  display: inline-block;
+  border-top: 0.06cm solid white;
+  //padding: 0px 20px;
+  font-size: 16px;
+  width: 16%;
+  margin: 0;
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  //font-family: Lucida Console;
+  line-height: 60px;
+  cursor: pointer;
+
+  &:hover {
+    font-size: 16.5px;
+    background: #989793;
+    color: #DCDCDC;
+  }
+
+  &.selected {
+    font-size: 17px;
+    background: white;
+    color: #424242;
+  }
+
+  li {
+    list-style-type: none;
+
+    a {
+      color: inherit;
+      text-decoration: none !important;
+    }
+  }
+}
+
+
+
+
