@@ -1,0 +1,145 @@
+.col-md-8{
+  padding-right: 5%;
+  margin-bottom: 40px;
+}
+
+.input-style {
+  font-size: 1.4vw;
+  resize: none;
+  outline: none;
+  width: 100%;
+  border: 1px solid darkgray;
+
+  &:focus{
+    border: 1px solid black;
+  }
+}
+
+.container {
+  width: 100%;
+
+  .page-content {
+    margin: 0px 12%;
+  }
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+
+  h1 {
+    font-size: 2.5vw;
+    margin: 0;
+    margin: 40px 0;
+  }
+}
+
+.element {
+
+  .box {
+    margin-bottom: 50px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.1);
+    //border-color: #70AF1A;
+    border-width: 1px;
+    padding: 10% 5% 5% 5%;
+    position: relative;
+
+    .header {
+      position: absolute;
+      top: -10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      z-index: 1;
+      width: 50%;
+      padding: 1%;
+      text-align: center;
+      font-weight: normal;
+      //color: #70AF1A;
+    }
+
+    .image {
+      padding-bottom: 5%;
+    }
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+
+  &#horizontal {
+    li {
+      float: left;
+    }
+  }
+
+  li {
+    h5 {
+      margin: 2px 0;
+      font-size: 1.12vw;
+    }
+
+    a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      margin: 5px;
+      background-color: darkgray;
+      text-align: center;
+      color: white;
+      &:hover {
+        background-color: #111111;
+
+      }
+    }
+  }
+}
+
+.input-box{
+  margin-bottom: 10px;
+
+  textarea{
+    height: 132px;
+    @extend .input-style;
+  }
+
+  input{
+    height: 39px;
+    @extend .input-style;
+
+    &#phone{
+      height: 49px;
+    }
+  }
+
+  .placeholder {
+    width: 100%;
+    height: 30px;
+    h4{
+      font-size: 1.2vw;
+    }
+  }
+}
+
+.submit{
+  float: right;
+  height: 40px;
+  width: 25%;
+  background-color: darkgray;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+  color: white;
+
+  &:hover{
+    background-color: #484B4B;
+  }
+}
+
+
+
+
