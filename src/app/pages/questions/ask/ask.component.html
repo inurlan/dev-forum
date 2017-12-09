@@ -1,3 +1,47 @@
-<p>
-  ask works!
-</p>
+<div class="container">
+  <div class="page-content">
+    <div class="title">
+      <h1>ASK QUESTION</h1>
+    </div>
+    <div class="col-md-12">
+      <div class="input-box">
+        <div class="placeholder">
+          <div style="float: left">
+            <h4>What is your programming question? Be specific.</h4>
+          </div>
+          <div style="float: right">
+            <h4>Invalid input</h4>
+          </div>
+        </div>
+        <input type="text">
+      </div>
+
+      <hr>
+      <div class="output">
+        <div [innerHtml]="form.controls.editor.value"></div>
+      </div>
+      <hr>
+
+      <div class="editor">
+        <form [formGroup]="form">
+          <quill-editor #editor formControlName="editor"></quill-editor>
+        </form>
+      </div>
+
+      <div class="input-box">
+        <div class="placeholder">
+          <div style="float: left">
+            <h4>Tags. At least one tag such as (c++ java python), max 6 tags.</h4>
+          </div>
+          <div style="float: right">
+            <h4>Invalid input</h4>
+          </div>
+        </div>
+        <input type="text">
+      </div>
+
+
+      <button class="submit">Post Your Question</button>
+    </div>
+  </div>
+</div>

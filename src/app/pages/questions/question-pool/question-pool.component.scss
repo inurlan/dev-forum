@@ -1,0 +1,32 @@
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-bottom: 40px;
+
+  .page-content {
+    margin: 0px 12%;
+  }
+}
+
+.col-md-4{
+  margin-top: 40px;
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+
+  h1 {
+    font-size: 1.5vw;
+    margin: 0;
+    margin: 40px 0;
+  }
+}
+
+
+.center{
+  display: table;
+  margin: 0 auto;
+}
+

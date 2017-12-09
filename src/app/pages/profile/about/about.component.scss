@@ -1,0 +1,32 @@
+
+.container {
+  width: 100%;
+  margin-bottom: 40px;
+  .page-content {
+    margin: 0px 12%;
+  }
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+
+  h1 {
+    font-size: 2.5vw;
+    margin: 0;
+    margin: 40px 0;
+  }
+}
+
+.image{
+  height: 420px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.biography{
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+}
+

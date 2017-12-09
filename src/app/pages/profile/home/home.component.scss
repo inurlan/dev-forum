@@ -3,130 +3,17 @@
   padding: 0;
   width: 100%;
 
-  .page-content{
+  .page-content {
     margin: 40px 14%;
   }
 }
 
-.element{
-
-  .box{
-    margin-bottom: 50px;
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0.1);
-    //border-color: #70AF1A;
-    border-width: 1px;
-    padding: 10% 5% 5% 5%;
-    position: relative;
-
-
-    .header{
-      position: absolute;
-      top: -3%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: white;
-      z-index: 1;
-      width: 50%;
-      padding: 1%;
-      text-align: center;
-      //color: #70AF1A;
-    }
-
-    .image{
-      padding-bottom: 5%;
-    }
-  }
-}
-
-//.col-md-4{
-//  margin: 0;
-//}
-
-
-//.my-icon{
-//  height: 20%;
-//  width: 10%;
-//  margin: 5px;
-//  background-color: darkgray;
-//  text-align: center;
-//  color: white;
-//}
-
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-
-  li{
-    float: left;
-    a{
-      display: block;
-      padding: 10px;
-      text-decoration: none;
-      margin: 5px;
-      background-color: darkgray;
-      text-align: center;
-      color: white;
-      &:hover{
-        background-color: #111111;
-
-      }
-    }
-  }
-}
-
-
-
-
-.my-a, .my-a:before {
-  transition: all .4s;
-
-}
-.my-div {
-  max-width: 500px;
-  margin: 2em auto;
-}
-.my-div :hover .my-a {
-  opacity: .4;
-}
-.my-a {
-  position: relative;
-  display: block;
-  max-width: 500px;
-  padding: 20px 20px 20px 45px;
-  box-sizing: border-box;
-  color: #777;
-  background: #fAfAfA;
-  text-decoration: none;
-  font-family: "Open Sans", "Segoe UI", Arial, sans-serif;
-}
-.my-a:before {
-  content: "";
-  position: absolute;
-  left:0; bottom:0; top:0;
-  width: 20px;
-  background: #7F8C9A;
-}
-.my-a:nth-child(even):before {
-  background: #34495E;
-}
-.my-a + .my-a {
-  border-top: 2px solid #ededed;
-}
-.my-div  .my-a:hover,
-.my-div  .my-a:focus {
-  opacity: 1;
-  padding-left: 55px;
-}
-.my-div  .my-a:hover:before,
-.my-div  .my-a:focus:before {
-  width: 30px;
-}
-
-
 .wrapper{
   margin-bottom: 50px;
 }
+
+.center{
+  display: table;
+  margin: 0 auto;
+}
+

@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
+import {FormBuilder, FormGroup} from '@angular/forms';
+import {QuillEditorComponent} from 'ngx-quill';
+
 
 @Component({
   selector: 'app-ask',
@@ -7,7 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AskComponent implements OnInit {
 
-  constructor() { }
+  form: FormGroup;
+
+  constructor(fb: FormBuilder) {
+    this.form = fb.group({
+      editor: ['']
+    });
+  }
+
+  @ViewChild('editor') editor: QuillEditorComponent;
 
   ngOnInit() {
   }
