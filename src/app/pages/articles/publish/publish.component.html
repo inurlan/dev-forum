@@ -1,3 +1,50 @@
-<p>
-  publish works!
-</p>
+<div class="container">
+  <div class="page-content">
+    <div class="title">
+      <h1>PUBLISH YOUR ARTICLE</h1>
+    </div>
+    <div class="col-md-12">
+      <div class="input-box">
+        <div class="placeholder">
+          <div style="float: left">
+            <h4>What is your article about?</h4>
+          </div>
+          <div style="float: right">
+            <h4>Invalid input</h4>
+          </div>
+        </div>
+        <input type="text">
+      </div>
+
+      <div class="image">
+        <img src="http://www.planwallpaper.com/static/images/desktop-year-of-the-tiger-images-wallpaper.jpg" alt="Avatar"
+             style="width:100%">
+      </div>
+
+      <hr>
+      <div class="output">
+        <div [innerHtml]="form.controls.editor.value"></div>
+      </div>
+      <hr>
+
+      <div class="editor">
+        <form [formGroup]="form">
+          <quill-editor #editor formControlName="editor" [modules] = "configurations" ></quill-editor>
+        </form>
+      </div>
+
+      <div class="input-box">
+        <div class="placeholder">
+          <div style="float: left">
+            <h4>Tags. At least one tag such as (c++ java python), max 10 tags.</h4>
+          </div>
+          <div style="float: right">
+            <h4>Invalid input</h4>
+          </div>
+        </div>
+        <input type="text">
+      </div>
+      <button class="submit">Publish Your Article</button>
+    </div>
+  </div>
+</div>

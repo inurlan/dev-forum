@@ -7,6 +7,8 @@ import { QuestionComponent } from './components/question/question.component';
 import { PaginatorComponent } from './components/paginator/paginator.component';
 import { InfoComponent } from './components/info/info.component';
 import {QuillModule} from 'ngx-quill';
+import { MediaListComponent } from './components/media-list/media-list.component';
+import { ProfileCardComponent } from './components/profile-card/profile-card.component';
 
 @NgModule({
   imports: [
@@ -20,7 +22,9 @@ import {QuillModule} from 'ngx-quill';
     TagComponent,
     QuestionComponent,
     PaginatorComponent,
-    InfoComponent
+    InfoComponent,
+    MediaListComponent,
+    ProfileCardComponent,
   ],
   exports: [
     CommonModule,
@@ -31,7 +35,9 @@ import {QuillModule} from 'ngx-quill';
     PaginatorComponent,
     InfoComponent,
     QuillModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MediaListComponent,
+    ProfileCardComponent,
   ]
 })
 export class SharedModule {

@@ -1,0 +1,7 @@
+<ul class="social-icons">
+  <li *ngFor="let icon of icons">
+    <a *ngIf="icon.active" [href]="icon.url" class="social-icon">
+      <i class="fa fa-{{icon.selector}}"></i>
+    </a>
+  </li>
+</ul>

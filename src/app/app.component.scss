@@ -15,6 +15,76 @@
   padding-left: 0;
 }
 
+::ng-deep .ql-align-center{
+  text-align: center;
+}
+
+::ng-deep .ql-align-right{
+  text-align: right;
+}
+
+::ng-deep .ql-align-justify{
+  text-align: justify;
+}
+
+::ng-deep blockquote {
+  border-left: 5px solid #70AF1A;
+}
+
+// inline editor
+::ng-deep .ql-snow ::ng-deep .ql-editor {
+  a {
+    font-weight: bold;
+    text-decoration: blink;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  pre.ql-syntax {
+    background-color: #eff0f1;
+    color: black;
+    overflow: visible;
+  }
+}
+
+::ng-deep .ql-toolbar.ql-snow {
+  border-top: thick solid #70AF1A;
+}
+
+::ng-deep  .ql-indent-1:not(.ql-direction-rtl){
+  padding-left: 3em;
+}
+
+::ng-deep  .ql-indent-2:not(.ql-direction-rtl){
+  padding-left: 6em;
+}
+
+::ng-deep  .ql-indent-3:not(.ql-direction-rtl){
+  padding-left: 9em;
+}
+::ng-deep  .ql-indent-4:not(.ql-direction-rtl){
+  padding-left: 12em;
+}
+
+::ng-deep  .ql-indent-5:not(.ql-direction-rtl){
+  padding-left: 15em;
+}
+
+::ng-deep  .ql-indent-6:not(.ql-direction-rtl){
+  padding-left: 18em;
+}
+
+::ng-deep  .ql-indent-7:not(.ql-direction-rtl){
+  padding-left: 21em;
+}
+
+::ng-deep  .ql-indent-8:not(.ql-direction-rtl){
+  padding-left: 24em;
+}
+
+
 .global_style_1 {
   border: none;
   color: #70AF1A !important;
@@ -172,30 +242,12 @@ html {
 .footer {
   flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
   padding: 20px;
-  background: blue;
-
+  //background-color: #424242;
+  background-color: #484B4B;
+  height: 200px;
 }
 
-// inline editor
-::ng-deep .ql-snow .ql-editor {
-  a {
-    font-weight: bold;
-    text-decoration: blink;
 
-    &:hover {
-      cursor: pointer;
-    }
-  }
 
-  pre.ql-syntax {
-    background-color: #eff0f1;
-    color: black;
-    overflow: visible;
-  }
-}
-
-::ng-deep .ql-toolbar.ql-snow {
-  border-top: thick solid darkgreen;
-}
 
 

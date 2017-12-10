@@ -24,7 +24,7 @@
 
       <div class="editor">
         <form [formGroup]="form">
-          <quill-editor #editor formControlName="editor"></quill-editor>
+          <quill-editor #editor formControlName="editor" [modules] = "configurations" ></quill-editor>
         </form>
       </div>
 
