@@ -7,12 +7,15 @@
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  -webkit-box-shadow: none;
+ // -webkit-box-shadow: none;
   -moz-box-shadow: none;
-  box-shadow: none;
+  ///box-shadow: none;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+
+  box-shadow: 0 15px 35px rgba(50, 50, 90, .1), 0 5px 15px rgba(0, 0, 0, .07);
+ // background: white;
 }
 
 .card .card-heading {
@@ -189,6 +192,8 @@
   overflow: hidden;
   text-align: center;
   background-color: rgba(214, 224, 226, 0.2);
+  margin: 0;
+  border-radius: 4px;
 }
 
 .card.hovercard .cardheader {

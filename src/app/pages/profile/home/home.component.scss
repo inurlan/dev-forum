@@ -4,16 +4,26 @@
   width: 100%;
 
   .page-content {
-    margin: 40px 13%;
+    margin: 40px 10%;
   }
 }
 
 .wrapper{
-  margin-bottom: 50px;
+  margin-bottom: 10vh;
+  padding: 0 2vh;
+}
+
+.col-md-8, .col-md-4{
+  padding: 0;
 }
 
 .center{
   display: table;
   margin: 0 auto;
+}
+
+.cards{
+  width:100%;
+  float: right;
 }
 

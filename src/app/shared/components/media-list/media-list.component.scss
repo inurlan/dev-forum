@@ -1,11 +1,12 @@
 //@import url(https://fonts.googleapis.com/css?family=Lato);
 
 .icon{
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition: .5s;
+  border-radius: 3px;
+  -o-transition:.9s;
+  -ms-transition:.9s;
+  -moz-transition:.9s;
+  -webkit-transition:.9s;
+  transition: .9s;
   background-color: gray;
 }
 
@@ -117,7 +118,7 @@ ul.social-icons {
 }
 
 .fa-github {
-  padding: 10px 11px;
+  padding: 10px 12px;
   @extend .icon;
   &:hover {
     background-color: black;  }
@@ -128,5 +129,16 @@ ul.social-icons {
   @extend .icon;
   &:hover {
     background-color: #3eb991;  }
+}
+
+.ta{
+  display: block;
+  width: 10%;
+  margin: 10px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
 }
 

@@ -9,6 +9,8 @@ export class MediaListComponent implements OnInit {
 
   //@Input() icons;
 
+  tr = 'fa';
+
   icons = [
     { selector: 'facebook',
       url: 'https://facebook.com',
@@ -40,6 +42,9 @@ export class MediaListComponent implements OnInit {
     }
   ];
 
+  sh() {
+    this.tr = (this.tr === 'fa') ? 'ta' : 'fa';
+  }
 
   constructor() {
   }
