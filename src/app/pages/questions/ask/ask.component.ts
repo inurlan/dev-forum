@@ -12,6 +12,10 @@ export class AskComponent implements OnInit {
 
   form: FormGroup;
 
+  /**
+   * initializing forms in constructor for test editor
+   */
+
   constructor(fb: FormBuilder) {
     this.form = fb.group({
       editor: ['']
@@ -19,6 +23,10 @@ export class AskComponent implements OnInit {
   }
 
   emptyArray: any[] = [];
+
+  /**
+   * configurations object holds list of settings provided for inline text editor
+   */
 
   configurations = {
     toolbar: [

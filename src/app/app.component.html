@@ -12,7 +12,9 @@
             <li *ngFor="let tab of tabs" role="presentation" [class]="getActiveRoute(tab.id)" [routerLink]="tab.route">
               <a  [routerLink]="[tab.id]" role="tab" data-toggle="tab">{{ tab.title }}</a>
             </li>
-            <button  [routerLink]="['profile', 'my_id']" data-toggle="tab">Profile</button>
+            <li>
+              <a[routerLink]="['profile', 'my_id']" data-toggle="tab">Profile</a>
+            </li>
           </ul>
         </div>
 

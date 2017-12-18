@@ -11,6 +11,9 @@ export class PublishComponent implements OnInit {
 
   form: FormGroup;
 
+  /**
+   * initializing forms in constructor for test editor
+   */
   constructor(fb: FormBuilder) {
     this.form = fb.group({
       editor: ['']
@@ -19,6 +22,9 @@ export class PublishComponent implements OnInit {
 
   emptyArray: any[] = [];
 
+  /**
+   * configurations object holds list of settings provided for inline text editor
+   */
   configurations = {
     toolbar: [
       ['bold', 'italic', 'underline', 'strike'],        // toggled buttons

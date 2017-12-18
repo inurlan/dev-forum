@@ -1,6 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+
+/**
+ * Routes to other pages designed according to Lazy Load principle in Angular
+ */
+
 const routes: Routes = [
   {path: '', redirectTo: ':user_id/home', pathMatch: 'full'},
   {path: ':user_id', redirectTo: ':user_id/home', pathMatch: 'full'},

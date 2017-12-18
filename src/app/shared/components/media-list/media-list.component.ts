@@ -9,7 +9,9 @@ export class MediaListComponent implements OnInit {
 
   //@Input() icons;
 
-  tr = 'fa';
+  /**
+   * some chunky data for icons this data is aimed to be taken from backend
+   */
 
   icons = [
     { selector: 'facebook',
@@ -28,10 +30,10 @@ export class MediaListComponent implements OnInit {
       url: 'https://slack.com',
       active: true
     },
-    // { selector: 'youtube',
-    //   url: 'https://youtube.com',
-    //   active: true
-    // },
+    { selector: 'youtube',
+      url: 'https://youtube.com',
+      active: true
+    },
     { selector: 'google-plus',
       url: 'https://gmail.com',
       active: true
@@ -41,10 +43,6 @@ export class MediaListComponent implements OnInit {
       active: true
     }
   ];
-
-  sh() {
-    this.tr = (this.tr === 'fa') ? 'ta' : 'fa';
-  }
 
   constructor() {
   }
