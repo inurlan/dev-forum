@@ -25,3 +25,32 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('h1').textContent).toContain('Welcome to app!');
   }));
 });
+
+
+/** let component: AppComponent;
+ let fixture: ComponentFixture<AppComponent>;
+ let debugElement: DebugElement;
+ let htmlElement: HTMLElement;
+
+ beforeEach(async(() => {
+    TestBed.configureTestingModule({
+      declarations: [
+        AppComponent
+      ],
+    }).compileComponents();
+  }));
+
+ beforeEach(() => {
+    fixture = TestBed.createComponent(AppComponent);
+    component = fixture.componentInstance;
+    debugElement = fixture.debugElement.query(By.css('div'));
+    htmlElement = debugElement.nativeElement;
+  });
+
+ it('should display the current url', () => {
+    // Url shoudl start with 'localhost:4200'
+    const result = 'localhost';
+    expect(result).toContain('localhost');
+  });
+ *
+ */

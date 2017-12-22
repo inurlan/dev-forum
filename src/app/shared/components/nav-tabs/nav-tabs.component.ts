@@ -10,7 +10,7 @@ import {Tab} from '../../../constants/objects/tab';
 export class NavTabsComponent implements OnInit {
 
   /**
-   * @Inout() decorator is aimed to provide an interface for
+   * @Input() decorator is aimed to provide an interface for
    * passing data through selector which is specified in @Component decorator.
    * usage should be in form of :
    * <app-nav-tabs [title]="nav_tab.title" [tabs]="nav_tab.tabs" [selected]="nav_tab.selected" ></app-nav-tabs>

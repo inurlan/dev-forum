@@ -7,7 +7,7 @@ import { Routes, RouterModule } from '@angular/router';
  * Routes to other pages designed according to Lazy Load principle in Angular
  */
 
-const routes: Routes = [
+export const routes: Routes = [
   {path: '', redirectTo: 'questions', pathMatch: 'full'},
   {path: 'questions', loadChildren: '../pages/questions/modules/questions.module#QuestionsModule'},
   {path: 'articles', loadChildren: '../pages/articles/modules/articles.module#ArticlesModule'},

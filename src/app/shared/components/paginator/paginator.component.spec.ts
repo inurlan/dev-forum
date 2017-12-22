@@ -22,4 +22,18 @@ describe('PaginatorComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  // this test should pass
+  it('should contain "a" tag', async(() => {
+    fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('a')).toBeTruthy();
+  }));
+
+  // this test should fail because there is no p tag in file
+  it('should contain "p" tag', async(() => {
+    fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('p')).toBeTruthy();
+  }));
 });
