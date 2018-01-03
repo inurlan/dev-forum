@@ -9,7 +9,8 @@
   }
 }
 
-.col-md-4{
+
+.col-md-4, .col-md-8{
   margin-top: 40px;
 }
 
@@ -24,9 +25,13 @@
   }
 }
 
-
 .center{
   display: table;
   margin: 0 auto;
 }
+.wrapper{
+  margin-bottom: 60px;
+}
+
+
 

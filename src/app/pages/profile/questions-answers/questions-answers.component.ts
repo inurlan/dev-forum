@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-questions-answers',
@@ -7,7 +7,48 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuestionsAnswersComponent implements OnInit {
 
-  constructor() { }
+
+  questions = [
+    {
+      title: 'Do you know how can I install eclipse?',
+      profile_image: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample3.jpg',
+      author: 'Nurlan Ilyas',
+      content: 'Lorem impulsum is the dumpiest text ever.'
+    },
+    {
+      title: 'Do you know how can I install eclipse?',
+      profile_image: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample3.jpg',
+      author: 'Nurlan Ilyas',
+      content: 'Lorem impulsum is the dumpiest text ever.'
+    },
+    {
+      title: 'Do you know how can I install eclipse?',
+      profile_image: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample3.jpg',
+      author: 'Nurlan Ilyas',
+      content: 'Lorem impulsum is the dumpiest text ever.'
+    },
+    {
+      title: 'Do you know how can I install eclipse?',
+      profile_image: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample3.jpg',
+      author: 'Nurlan Ilyas',
+      content: 'Lorem impulsum is the dumpiest text ever.'
+    },
+    {
+      title: 'Do you know how can I install eclipse?',
+      profile_image: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample3.jpg',
+      author: 'Nurlan Ilyas',
+      content: 'Lorem impulsum is the dumpiest text ever.'
+    },
+    {
+      title: 'Do you know how can I install eclipse?',
+      profile_image: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample3.jpg',
+      author: 'Nurlan Ilyas',
+      content: 'Lorem impulsum is the dumpiest text ever.'
+    },
+  ]
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

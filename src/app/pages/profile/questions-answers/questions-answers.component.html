@@ -6,11 +6,9 @@
       </div>
       <div style="width: 100%;">
         <div class="questions">
-          <app-question></app-question>
-          <app-question></app-question>
-          <app-question></app-question>
-          <app-question></app-question>
-          <app-question></app-question>
+          <div class="wrapper" *ngFor="let question of questions">
+            <app-question [question]="question"></app-question>
+          </div>
         </div>
         <app-paginator class="center" ></app-paginator>
       </div>

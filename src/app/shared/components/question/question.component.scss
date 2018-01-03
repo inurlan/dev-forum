@@ -1,98 +1,188 @@
 
-.container {
+$serif:'Playfair Display',
+serif;
+
+
+.container{
   width: 100%;
-  margin-bottom: 20px;
-}
-
-.col-md-2, .col-md-10, .col-md-6, .col-md-5, .col-md-7{
-  margin: 0;
   padding: 0;
-}
-
-.col-md-8, .col-md-4{
-  margin: 15px 0;
-  padding: 0;
-}
-
-
-
-
-$title-font-size: 1.2vw;
-$title-lines-to-show: 2;
-$line-height: 1.4;
-
-.title {
   margin: 0;
-  h5 {
-    font-size: 1.1vw;
-    display: block; /* Fallback for non-webkit */
-    display: -webkit-box;
-    max-width: 100%;
-    height: $title-font-size*$line-height*$title-lines-to-show; /* Fallback for non-webkit */
-    margin: 0 auto;
-    font-size: $title-font-size;
-    line-height: $line-height;
-    -webkit-line-clamp: $title-lines-to-show;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
 }
 
 
-$font-size: 0.9vw;
-
-$lines-to-show: 3;
-
-.question-content {
-  height: 100px;
-  display: block; /* Fallback for non-webkit */
-  display: -webkit-box;
+figure.snip1157 {
+  font-family: $serif;
+  //font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  float: left;
+ // overflow: hidden;
+  //margin: 10px 1%;
+  //min-width: 220px;
+  //max-width: 310px;
+  width: 100%;
+  color: #333;
+  text-align: left;
+  box-shadow: none !important;
+}
+figure.snip1157 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+figure.snip1157 img {
   max-width: 100%;
-  height: $font-size*$line-height*$lines-to-show; /* Fallback for non-webkit */
-  margin: 0 auto;
-  font-size: $font-size;
-  line-height: $line-height;
-  -webkit-line-clamp: $lines-to-show;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  vertical-align: middle;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  border: 5px solid rgba(255,255,255,0.5);
+  //margin: 40px 0 0 10px;
+}
+figure.snip1157 blockquote {
+  border: none;
+  display: block;
+  border-radius: 6px;
+  position: relative;
+  background-color: white;
+  padding: 25px 50px 30px 50px;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.6em;
+  font-style: italic;
+  box-shadow: 0 15px 35px rgba(50, 50, 90, .1), 0 5px 15px rgba(0, 0, 0, .07);
+}
+figure.snip1157 blockquote:before,
+figure.snip1157 blockquote:after {
+  font-family: 'FontAwesome';
+  content: "\201C";
+  position: absolute;
+  font-size: 50px;
+  opacity: 0.3;
+  font-style: normal;
+}
+figure.snip1157 blockquote:before {
+  top: 25px;
+  left: 20px;
 }
 
-ul {
-  list-style-type: none;
+figure.snip1157 blockquote:after {
+  content: "\201D";
+  right: 20px;
+  bottom: 0;
+}
+
+figure.snip1157 .arrow {
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid white;
+
+  margin: 0;
+  position: absolute;
+}
+
+figure.snip1157 .author {
+  position: absolute;
+  bottom: 45px;
+  padding: 0 10px 0 120px;
+  margin: 0;
+  //text-transform: uppercase;
+  color: #ffffff;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+
+}
+figure.snip1157 .author h5 {
+  //opacity: 0.8;
+  margin: 0;
+  font-weight: 600;
+  color: black;
+  font-size: 1.2em;
+
+}
+figure.snip1157 .author h5 span {
+  font-weight: 400;
+  text-transform: none;
+  padding-left: 5px;
+
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.card {
+  width: 100%;
+  //max-width: 600px;
+  height: 90px;
+  background: white;
+  border-radius: 100px 10px 10px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0 0 0px;
+  box-shadow: 0 15px 35px rgba(50, 50, 90, .1), 0 5px 15px rgba(0, 0, 0, .07);
+
+
+}
+.ie {
+  color: #fff;
+  font-size: .7em;
+  opacity: .3;
+}
+.content {
+  padding: 20px;
+}
+.content h1 {
+  font-size: 1.3em;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-
-  li{
-    float: left;
-    a{
-      display: block;
-      padding: 10px;
-      text-decoration: none;
-      margin: 5px;
-      background-color: darkgray;
-      text-align: center;
-      color: white;
-      &:hover{
-        background-color: #111111;
-
-      }
-    }
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eaeaea;
+}
+.content p {
+  margin: 0;
+  padding: 0;
+}
+svg {
+  border: 3px solid #999;
+  width: 200px;
+  height: 100%;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  background: url('https://cdn2.iconfinder.com/data/icons/ballicons-2-free/100/wrench-512.png') no-repeat center;
+  background-size: contain;
+  border-radius: 50%;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+circle {
+  fill: transparent;
+  stroke: rgba(255, 255, 255, 0.8);
+  stroke-width: 32;
+  stroke-dasharray: 0 100;
+  -webkit-transition: stroke-dasharray 0.2s ease;
+  transition: stroke-dasharray 0.2s ease;
+  -webkit-animation: spin 20s ease-out infinite;
+  animation: spin 20s ease-out infinite;
+}
+@-webkit-keyframes spin {
+  50% {
+    stroke-dasharray: 100 100;
+  }
+  100% {
+    stroke-dasharray: 0 100;
   }
 }
-
-p{
-  font-size: 0.9vw;
-  margin: 0;
-  padding: 0;
+@keyframes spin {
+  50% {
+    stroke-dasharray: 100 100;
+  }
+  100% {
+    stroke-dasharray: 0 100;
+  }
 }
-
-hr{
-  padding: 0;
-  margin: 1px;
-  border: none;
-}
-
-

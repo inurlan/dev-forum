@@ -1,3 +1,10 @@
+$san-serif:'Open Sans',
+sans-serif;
+$serif:'Playfair Display',
+serif;
+
+
+
 .card {
   padding-top: 20px;
   margin: 10px 0 20px 0;
@@ -99,6 +106,7 @@
   color: #999;
   text-overflow: ellipsis;
   white-space: nowrap;
+
 }
 
 .card-comments .media-heading {
@@ -242,4 +250,9 @@
 .card.hovercard .bottom {
   padding: 0 20px;
   margin-bottom: 17px;
+}
+
+a{
+  font-family: $serif;
+
 }
